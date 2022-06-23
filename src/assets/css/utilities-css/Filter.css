@@ -1,0 +1,18 @@
+.filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.filter p {
+  color: #bebebe;
+}
+
+.rating ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.rating ul li {
+  display: block;
+}

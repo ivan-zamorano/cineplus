@@ -1,0 +1,25 @@
+.movie-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  background: #dadada;
+  border-radius: 8px;
+}
+
+.movie-card a {
+  text-decoration: none;
+  color: #222;
+}
+
+.movie-card img {
+  width: 100%;
+}
+
+.movie-card .title-wrapper {
+  min-height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

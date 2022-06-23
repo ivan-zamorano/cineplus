@@ -1,0 +1,92 @@
+#search {
+  background: url(../../img/cinema.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 30vh;
+}
+
+.search-body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-text {
+  text-align: center;
+  color: #ebebeb;
+}
+
+.search-text h3 {
+  font-size: 1.4rem;
+}
+.search-text p {
+  font-size: 1.2rem;
+}
+
+.searchbar-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.searchbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.5rem;
+  width: 80%;
+  margin-top: 1rem;
+}
+
+.searchbar button {
+  border: none;
+  height: 1.5rem;
+  cursor: pointer;
+  border-radius: 0 10px 10px 0;
+  background: #fff;
+}
+
+.searchbar svg {
+  background: #fff;
+  border-radius: 50px;
+}
+
+.search-input {
+  border: none;
+  height: 100%;
+  width: 100%;
+  padding: 0.3rem;
+  border-radius: 10px 0 0 10px;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+@media only screen and (min-width: 992px) {
+  #search {
+    height: 40vh;
+  }
+
+  .search-text {
+    padding: 1rem;
+  }
+
+  .search-text h3 {
+    font-size: 2rem;
+  }
+  .search-text p {
+    font-size: 1.8rem;
+  }
+
+  .searchbar {
+    height: 2rem;
+  }
+
+  .searchbar button {
+    height: 2rem;
+  }
+} ;

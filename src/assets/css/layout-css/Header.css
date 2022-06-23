@@ -1,0 +1,23 @@
+.navbar {
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(20, 20, 78);
+}
+
+.navbar-logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-logo-wrapper a {
+  text-decoration: none;
+}
+
+.navbar-logo {
+  font-family: "Fascinate", cursive;
+  font-size: 2rem;
+  color: #dadada;
+}
