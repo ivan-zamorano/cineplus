@@ -19,10 +19,10 @@ const ContextProvider = ({ children }) => {
   const [initMoviesState, setInitMovieState] = useState([]);
   const [detail, setDetail] = useState();
 
-  if (localStorage.length === 0) {
-    localStorage.setItem("detalle", "[]");
+  if (sessionStorage.length === 0) {
+    sessionStorage.setItem("detalle", "[]");
   }
-  const storageDetail = JSON.parse(localStorage.getItem("detail"));
+  const storageDetail = JSON.parse(sessionStorage.getItem("detail"));
 
   //API call
   const getMovies = async () => {
@@ -100,6 +100,7 @@ const ContextProvider = ({ children }) => {
     });
     localStorage.setItem("detail", JSON.stringify(getDetail));
     setDetail(getDetail);
+    console.log(getDetail);
   };
 
   return (
@@ -113,7 +114,7 @@ const ContextProvider = ({ children }) => {
         starCount: starCount,
         movies: movies,
         loading: loading,
-        detail: storageDetail,
+        detail: detail,
       }}
     >
       {children}

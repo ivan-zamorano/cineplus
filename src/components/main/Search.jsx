@@ -11,7 +11,7 @@ const Search = () => {
       <section id="search">
         <div className="container search-body">
           <div className="search-text">
-            <h3>¿Buscas alguna pelicula?</h3>
+            <h3>¿Buscas alguna película?</h3>
             <p> Explora nuestros títulos:</p>
           </div>
           <div className="searchbar-wrapper">
