@@ -7,8 +7,6 @@ import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 const Detail = () => {
   const { detail } = useContext(Context);
 
-  console.log(detail);
-
   const imgUrl = `https://image.tmdb.org/t/p/w440_and_h660_face${detail.poster_path}`;
   return (
     <>

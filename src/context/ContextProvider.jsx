@@ -100,7 +100,6 @@ const ContextProvider = ({ children }) => {
     });
     localStorage.setItem("detail", JSON.stringify(getDetail));
     setDetail(getDetail);
-    console.log(getDetail);
   };
 
   return (
