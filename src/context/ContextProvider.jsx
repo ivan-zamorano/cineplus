@@ -20,7 +20,7 @@ const ContextProvider = ({ children }) => {
   const [detail, setDetail] = useState();
 
   if (sessionStorage.length === 0) {
-    sessionStorage.setItem("detalle", "[]");
+    sessionStorage.setItem("detail", "[]");
   }
   const storageDetail = JSON.parse(sessionStorage.getItem("detail"));
 
@@ -98,7 +98,7 @@ const ContextProvider = ({ children }) => {
     const getDetail = movies.find((item) => {
       return item.id === id;
     });
-    localStorage.setItem("detail", JSON.stringify(getDetail));
+    sessionStorage.setItem("detail", JSON.stringify(getDetail));
     setDetail(getDetail);
   };
 
@@ -113,7 +113,7 @@ const ContextProvider = ({ children }) => {
         starCount: starCount,
         movies: movies,
         loading: loading,
-        detail: detail,
+        detail: storageDetail,
       }}
     >
       {children}
